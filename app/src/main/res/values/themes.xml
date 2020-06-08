@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.App" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#263238</item>
+        <item name="colorAccent">#4f5b62</item>
+        <item name="colorPrimaryDark">#000a12</item>
+    </style>
+
+    <style name="Theme.App" parent="Base.Theme.App" />
+</resources>
