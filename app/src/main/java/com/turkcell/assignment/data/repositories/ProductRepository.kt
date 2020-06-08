@@ -21,11 +21,10 @@ class ProductRepository(
 ) {
 
     /**
+     *      product listesi sadece livedataya bağlı offline dbden beslenir.
+     *      online data geldiğinde dbye insert edildiği için tekrar db tetiklenir ve ui update olur
      *
-     *   Liste ekranı offline first çalışacak şekilde tasarlandı. Detay sayfası ise sadece retrofitin online cache i mevcut.
-     *
-     *   Liste ekranın sadece livedata ile offline databaseden besleniyor. Servisten cevap geldiğinde ise tekrar offline tetiklendiği için ui update oluyor.
-     *
+     *      product detayında ise sadece retrofitin online cache i mevcut.
      */
     private val productList = MutableLiveData<List<Product>>()
 
